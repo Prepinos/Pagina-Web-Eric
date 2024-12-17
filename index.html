@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>file:///C:/Users/erict/OneDrive/Documentos/tablapro2.html</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>	
+	<form action="registrardatos.php" method="post"> <!-- todo es codigo especifico necesita esta estructura-->
+		
+		introduce el nombre:
+		<input type="text" name="nombre" size="20">
+		<br>
+		
+		ahora pon la clave:
+		<input type="password" name="clave1" maxlength="8" size="12">
+		<br>
+		
+		repite la clave:
+		<input type="password" name="clave2" maxlength="8" size="12">
+		<br>
+		
+		<input type="submit" value="enviar">
+		<input type="reset" value="borrar">
+		<br> <br>
+		
+		Comentarios:<br>
+		<textarea name="comentarios" rows="5" cols="60"></textarea>
+		<br> <br>
+		
+		por favor seleccione sus programas favoritos:
+		<br>
+		<input type="checkbox" name="hola">Java   <br>
+		<input type="checkbox" name="como">C++   <br>
+		<input type="checkbox" name="estas">C    <br>
+		<input type="checkbox" name="capo">C#    <br>
+		
+		<br>
+		ahora diganos cual es el sistema operativo que mas utilizas en tu vidsa: <br>
+		
+		<input type="radio" name="estudios" value="1">windows <br>
+		<input type="radio" name="estudios" value="2">ios <br>
+		<input type="radio" name="estudios" value="3">samsung <br>
+		<input type="radio" name="estudios" value="4">linux <br>
+		<input type="radio" name="estudios" value="4">huawei <br>
+		<input type="submit" value="enviar">
+		
+		<br>
+		selecciona correos que te gusten <br>
+		<select name="correo[]" size="3" multiple>
+			<option value="1">pepitopro@gmail.com </option >
+			<option value="2">elboliviano@gmail.com </option>
+			<option value="3">elmascapo@gmailcom </option>
+			<option value="4">pepitoperes@gmailcom </option>
+			<option value="5">lomaleantequieren@gmail.com </option>
+			<option value="6">cripicripicripi@hotmail.com </option>	
+		</select> <br>
+	
+		<input type="submit" value="enviar"> <br>
+		
+		ahora dignos que tan satisfecho está con esta paagina:
+		<select name="estado" size="1">
+			<option value="1">malísimo </option>
+			<option value="2">malo </option>
+			<option value="3">normal </option>
+			<option value="4">bueno </option>
+			<option value="5">muy buneo </option>
+			<option value="6">premio nobel </option>	
+		</select> <br>
+		
+		ahora selecciona una fruta o algo de este cuadro ordenado:
+		<select name="comestibles" size="1">
+			<optgroup label="sudamerica">
+				<option value="1">argnetina </option>
+				<option value="2">bolivia </option>
+				<option value="3">chile </option>
+			</optgroup>
+			
+			<optgroup label="europa">
+				<option value="4">españa </option>
+				<option value="5">francia </option>
+				<option value="6">alemania </option>
+			</optgroup>
+			
+		</select> <br> <br><br><br>
+		
+		<button type="submit">enviar<img src="fondochino1.png"alt="envio"> hola </button>
+		
+	</form>
+
+</body>
+</html>
