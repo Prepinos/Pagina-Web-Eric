@@ -1,0 +1,184 @@
+* {margin: 0;		/* aseguramos margenes base*/
+	padding: 0;}
+
+body {				/* personalizacion de texto base*/
+	font-family: Arial, Verdana;
+	font-style: normal;
+	font-size: 1rem;
+	font-weight: normal;
+	padding-top: 3em;
+	text-align: center;
+	color: #000;
+	background: linear-gradient(90deg, #6e8efb, #a777e3);	/* extra decorado*/
+	cursor: progress;}
+
+a:hover, .contenidoP button, .conteLinks a:hover {	/* cursor personalizado en cualquier seccion*/
+	cursor: pointer;}
+
+.conteLinks {				/* cabecera de pagina, subpaginas fijadas*/
+	position: fixed; top: 0;	/*primer bloque de la pagina*/
+	background-color: #333;
+	color: white;
+	width: 100%;
+	padding: 1em 0;}
+
+.conteLinks a {				/* espacio y margen de cada link*/
+	color: white;
+	margin: 0 2em;
+	text-decoration: none;
+	font-weight: bold;}
+
+.conteLinks a.usando {		/* pagina link actual*/
+	background-color: #555;
+	padding: 0.5em 0.8em;
+	border-radius: 0.8em;
+	color: #ffd700;}
+
+.conteLinks a:hover {		/* link que se quiere usar*/
+	text-decoration: underline;}
+.conteLinks a:active {		/*clickeado de link*/
+	background-color: #555;
+	padding: 0.5em 0.8em;
+	border-radius: 0.8em;
+	color: #ffd700;}
+
+.Titulo1 {					/* segundo bloque de la pagina*/
+	padding: 2em;
+	background-color: #f0f0f0;
+	color: #333;}
+
+.Titulo1 h1 {				/*decoracion del titulo*/
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	color: #6e8efb;}
+
+.bloquefin {					/* pie de pagina*/
+	background-color: #f0f0f0;
+	padding: 2.5em 1.5em;}
+
+.misLinks {
+	background-color: white;
+	padding: 1.2em;
+	border-radius: 0.5em;
+	margin-bottom: 1.2em;}
+
+h2 {
+	font-size: 2em;
+	margin-bottom: 1em;}
+
+p {
+	font-size: 1.2em;
+	max-width: 37.5em;
+	margin: 0 auto;}
+/*CONTENIDO DE INDEX*/
+.contenidoP {
+	min-height: 100vh;
+	background: linear-gradient(90deg, #6e8efb, #a777e3);
+	color: white;
+	padding: 5em 2em 6em;
+}
+
+.contenidoP button {				/*decorado de botones*/
+	margin-top: 2em;
+	padding: 0.8em 2em;
+	background-color: #ff6b6b;
+	color: white;
+	border: none;
+	border-radius: 2em;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.contenidoP button:hover {			/*decorado de interaccion de botones*/
+	background-color: #ff4b4b;}
+.contenidoP button:active {
+	background-color: #ff0;}
+
+#imagenGato {				/*decoracion de la imagen para que se vea*/
+	margin-top: 10em;
+	margin-bottom: 12em;
+	width: 18.75em;
+	border-radius: 1em;
+	border: 0.3em solid #3498db;}
+/*CONTENIDO DE FORMULARIO*/
+.formupro {
+	background-color: #fff;
+	width: 90%;
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px 30px;
+	border: 2px solid #ccc;
+	border-radius: 1em;
+	box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.1);
+	font-size: 16px;}
+
+.formupro h2 {
+	color: #6e8efb;
+	text-align: center;
+	margin-bottom: 1em;}
+
+.formupro label {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	color: #333;}
+
+.formupro input,
+.formupro textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+	box-sizing: border-box;
+	font-size: 1em;}
+
+.formupro input:focus,
+.formupro textarea:focus {
+	border-color: #6e8efb;
+	outline: none;}
+
+.formupro button {
+	margin-top: 1.5em;
+	padding: 10px 25px;
+	background-color: #6e8efb;
+	color: white;
+	border: none;
+	border-radius: 2em;
+	font-size: 1em;
+	transition: background-color 0.3s ease;
+}
+
+.formupro button:hover {
+	background-color: #4a6cfb;
+}
+
+.formupro p {
+	color: #444;
+	text-align: justify;
+	text-indent: 20px;
+	letter-spacing: 0.02em;
+	word-spacing: 0.1em;
+}
+/*CONTENIDO DE TABLERO*/
+.tablero {
+  border-collapse: collapse;
+  margin: 2em auto;
+  border: 2px solid #333;
+}
+
+.tablero td {
+  width: 40px;
+  height: 40px;
+}
+
+.tablero tr:nth-child(even) td:nth-child(odd),	/*pares e impares negras a las filas y columnas*/
+.tablero tr:nth-child(odd) td:nth-child(even) {
+  background-color: #333;
+}
+
+
+.tablero tr:nth-child(even) td:nth-child(even), /*pares e impares blancas a las filas y columnas*/
+.tablero tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #fff;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>formuPro</title>
+	<link rel="StyleSheet" href="estilo1.css" type="text/css">
+</head>
+<body>
+
+    <div class="conteLinks">
+        <a href="index.html">Inicio</a>
+        <a href="safari.html">zafari</a>
+        <a href="ajedrez.html">ajedrez</a>
+        <a href="formulario.html" class="usando">formulario</a>
+        <a href="extras.html">extras</a>
+    </div>
+
+    <div class="Titulo1">
+        <h1>Página principal Eric</h1>
+        <p>introducción para mostrar contenido básico</p>
+    </div>
+
+    <!-- ZONA DE CONTENIDO REUTILIZABLE -->
+    <form class="formupro" action="registrardatos.php" method="post">
+    <label>Introduce el nombre:
+        <input type="text" name="nombre" size="20">
+    </label>
+
+    <label>Ahora pon la clave:
+        <input type="password" name="clave1" maxlength="8" size="12">
+    </label>
+
+    <label>Repite la clave:
+        <input type="password" name="clave2" maxlength="8" size="12">
+    </label>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+
+    <label>Comentarios:
+        <textarea name="comentarios" rows="5" cols="60"></textarea>
+    </label>
+
+    <p>Por favor seleccione sus programas favoritos:</p>
+    <label><input type="checkbox" name="hola"> Java</label>
+    <label><input type="checkbox" name="como"> C++</label>
+    <label><input type="checkbox" name="estas"> C</label>
+    <label><input type="checkbox" name="capo"> C#</label>
+
+    <p>Seleccione el sistema operativo que más utilizas en tu vida:</p>
+    <label><input type="radio" name="estudios" value="1"> Windows</label>
+    <label><input type="radio" name="estudios" value="2"> iOS</label>
+    <label><input type="radio" name="estudios" value="3"> Samsung</label>
+    <label><input type="radio" name="estudios" value="4"> Linux</label>
+    <label><input type="radio" name="estudios" value="5"> Huawei</label>
+
+    <p>Selecciona correos que te gusten:</p>
+    <select name="correo[]" size="3" multiple>
+        <option value="1">pepitopro@gmail.com</option>
+        <option value="2">elboliviano@gmail.com</option>
+        <option value="3">elmascapo@gmail.com</option>
+        <option value="4">pepitoperes@gmail.com</option>
+        <option value="5">lomaleantequieren@gmail.com</option>
+        <option value="6">cripicripicripi@hotmail.com</option>
+    </select>
+
+    <p>¿Qué tan satisfecho estás con esta página?</p>
+    <select name="estado">
+        <option value="1">Malísimo</option>
+        <option value="2">Malo</option>
+        <option value="3">Normal</option>
+        <option value="4">Bueno</option>
+        <option value="5">Muy bueno</option>
+        <option value="6">Premio Nobel</option>
+    </select>
+
+    <p>Selecciona una fruta o algo del cuadro ordenado:</p>
+    <select name="comestibles">
+        <optgroup label="Sudamérica">
+            <option value="1">Argentina</option>
+            <option value="2">Bolivia</option>
+            <option value="3">Chile</option>
+        </optgroup>
+        <optgroup label="Europa">
+            <option value="4">España</option>
+            <option value="5">Francia</option>
+            <option value="6">Alemania</option>
+        </optgroup>
+    </select>
+
+    <button type="submit">
+        Enviar <img src="pollopequeño.png" alt="envio"> hola
+    </button>
+	</form>
+    <!-- FIN CONTENIDO REUTILIZABLE -->
+    <div class="bloquefin">
+        <div class="feature-box">
+            <h3>Clase</h3>
+            <p>Lenguaje de marcas</p>
+        </div>
+        <div class="feature-box">
+            <h3>Correo</h3>
+            <p><a href="mailto:erictaboadaeric@gmail.com">erictaboadaeric@gmail.com</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
